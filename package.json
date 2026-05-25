@@ -11,9 +11,14 @@
   "scripts": {
     "ready": "vp check && vp run -r test && vp run -r build",
     "dev": "vp run website#dev",
-    "prepare": "vp config"
+    "prepare": "vp config",
+    "check": "ultracite check",
+    "fix": "ultracite fix"
   },
   "devDependencies": {
+    "oxfmt": "^0.51.0",
+    "oxlint": "^1.66.0",
+    "ultracite": "7.7.0",
     "vite-plus": "catalog:"
   },
   "overrides": {
